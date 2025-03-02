@@ -1,0 +1,27 @@
+name: solar-panel
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy=1.23.5
+  - pandas=1.5.3
+  - matplotlib=3.6.3
+  - seaborn=0.12.2
+  - scikit-learn=1.2.1
+  - shapely=2.0.1      # Required for IoU calculation
+  - opencv=4.6.0
+  - geopandas
+  - pillow
+  - requests
+  - tqdm=4.64.1
+  - jupyterlab=3.6.1
+  - pip
+  - protobuf=3.20.*    # Pinning protobuf to avoid compatibility issues
+  - pip:
+      - pycocotools           # For COCO evaluation metrics
+      - ultralytics==8.0.43   # YOLOv8
+      - torchvision==0.14.1
+      - torch==1.13.1
+      - tensorflow==2.11.0
+      - supervision==0.16.0
